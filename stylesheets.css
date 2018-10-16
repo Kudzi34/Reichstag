@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+#hamburger-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: translateX(100%);
+}
+.modal{
+
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    font-family: serif;
+    font-size: 15px;
+    height: 150px;
+    width: 500px;
+    top: 415px;
+    left: 425px;
+    text-align: center;
+    z-index: 10;
+    padding: 10px;
+
+}
+#modalX{
+    float: right;
+    clear:both;
+}
+
+
+
+.menu-on #menu {
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+#menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(0);
+    background-color: white;
+    width: 300px;
+    height: 100%;
+}
+
+.links{
+    padding: 5px;
+    display: block;
+    left: 1px;
+    position: relative;
+    top: 30px;
+    font-size: 22px;
+    color: blue;
+}
+#logout {
+    position: relative;
+    font-size: 18px;
+    top: 50px;
+}
+
+/*.menu-on .menu {
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 0.5s;*/
+}
+
+#x {
+    color: black;
+    position: relative;
+    left: 275px;
+    top: 30px;
+}
+
+
+
+#image2 {
+    position: relative;
+    float: right;
+    height: 50px;
+}
+
+#image1 {
+    position: relative;
+    float: left;
+    height: 50px;
+}
+
+.welcomediv {
+    position: relative;
+    /* width: 100%;
+    height: 90%; */
+}
+
+#image3 {
+    width: 100%;
+    vertical-align: bottom;
+    filter: brightness(0.7);
+}
+
+.headerdiv {
+    width: 100%;
+    height: 50px;
+}
+
+#welcome {
+    color: white;
+    /* bottom: 350px; */
+    position: relative;
+    font-style: oblique;
+    text-align: center;
+    font-family: georgia;
+    font-weight: bold;
+}
+
+.text-box {
+    text-align: center;
+    /*border: 1px red dotted;*/
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    /* height: 125px; */
+}
+
+button {
+    /* left: 50%; */
+
+    border-color: orangered;
+    background: yellow;
+    text-align: center;
+    height: 50px;
+    width: 250px;
+    border-radius: 40px;
+    position: relative;
+    top: 15px;
+    color: orange;
+    font-family: serif;
+    font-size: 25px;
+    font-weight: bold;
+
+    /*border-width: 3px;*/
+}
+
+/* .header-img {
+} */
+
+.menudiv {
+    background-color: #cccccc;
+    /* height: 250px; */
+    /* width: 100%; */
+    /* border: 1px green dotted; */
+    text-align: center;
+}
+.cell1 {
+    height: auto;
+    margin: auto;
+    display: inline-block;
+    width: 40%;
+    /*border: dotted;
+    color: blue;
+    vertical-align: middle;*/
+    text-align: left;
+}
+
+.icon {
+    position: relative;
+    top: 50px;
+    display: table-cell;
+    width: 150px;
+    padding-top: 4.5%;
+    padding-bottom: 20px;
+    /*border: 3px blue dotted;*/
+}
+
+.img-icon {
+    height: 30%;
+    width: 50%;
+    float: right;
+    padding-right: 15px;
+}
+
+/* ctrl  up down */
+
+.text {
+    position: relative;
+    height: auto;
+    bottom: 20px;
+    color: black;
+    display: table-cell;
+    width: 60%;
+    float: left;
+    margin-left: 160px;
+    vertical-align: middle;
+    font-size: 13px;
+    font-family: georgia;
+    padding-right: 1px;
+    /*border: 1px red dotted;*/
+    padding-bottom: 20px;
+}
+.footer {
+    height: 30px;
+    line-height: 31px;
+    background-color: #666666;
+    font-size: 10px;
+    padding-left: 38px;
+    color: white;
+    font-family: georgia;
+    color: #dcdfdf;
+}
+@media screen and (min-width: 320px) and (max-width: 720px) {
+    #welcome {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .welcomediv {
+        top: 25%;
+        height: 80%;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+    .menudiv {
+        padding-top: 10px;
+        padding-bottom: 80px;
+    }
+
+    .cell1 {
+        padding-right: 10px;
+        display: block;
+        width: 50%;
+    }
+
+    .icon {
+        position: relative;
+        right: 80px;
+        width: 50%;
+    }
+
+    .text {
+        bottom: 50px;
+        right: 70px;
+        font-size: 15px;
+    }
+}
